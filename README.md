@@ -59,6 +59,19 @@ The AI layer uses OpenAI GPT for bullet rewriting and cover letter generation, a
 
 ---
 
+## Project Structure
+
+The repository is organized by responsibility, with the app layer first and the deployment/database configs last:
+
+```text
+src/        # Primary frontend app and shared UI logic
+backend/    # Express API, AI services, auth, and PDF generation
+frontend/   # Static frontend entry and app shell assets
+supabase/   # Database and platform configuration
+```
+
+---
+
 ## High-Level Workflow
 
 ### Resume Optimization Flow
